@@ -9,6 +9,4 @@ define('CACHE', ROOT . '/tmp/cache');
 define('LOGS', ROOT . '/tmp/logs');
 define('ETC', ROOT . '/etc');
 
-echo CORE;
-
 require_once ROOT . '/vendor/autoload.php';

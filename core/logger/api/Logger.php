@@ -1,6 +1,6 @@
 <?php
 
-namespace core\api;
+namespace core\logger\api;
 
 use core\event\Event;
 

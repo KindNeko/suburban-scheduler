@@ -6,7 +6,7 @@ define('APP', ROOT . '/app');
 define('CORE', ROOT . '/core');
 define('HELPERS', ROOT . '/core/helpers');
 define('CACHE', ROOT . '/tmp/cache');
-define('LOGS', ROOT . '/tmp/logs');
+define('LOG', ROOT . '/tmp/log');
 define('ETC', ROOT . '/etc');
 
 require_once ROOT . '/vendor/autoload.php';

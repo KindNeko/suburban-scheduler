@@ -4,3 +4,21 @@
         Файл: /opt/lampp/htdocs/newFramework/public/index.php |
         Строка: 23 | 
 =================
+[2023-05-05 14:41:50] 
+        Тэг: DEBUG | 
+        Текст ошибки: Возникла ошибочка | 
+        Файл: /opt/lampp/htdocs/newFramework/public/index.php |
+        Строка: 23 | 
+=================
+[2023-05-05 14:43:19] 
+        Тэг: DEBUG | 
+        Текст ошибки: Возникла ошибочка | 
+        Файл: /opt/lampp/htdocs/newFramework/public/index.php |
+        Строка: 23 | 
+=================
+[2023-05-05 14:43:35] 
+        Тэг: DEBUG | 
+        Текст ошибки: 2 | 
+        Файл: Undefined variable $tr |
+        Строка: /opt/lampp/htdocs/newFramework/public/index.php | 
+=================

@@ -10,12 +10,6 @@ class FileLogger implements Logger
 {
     public function __construct( )
     {
-        if(DEBUG){
-            error_reporting(-1);
-        } else {
-            error_reporting(0);
-        }
-
         set_exception_handler([$this, 'exceptionHandler']);
         set_error_handler([$this, 'errorHandler']);
         ob_start();

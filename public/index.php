@@ -1,4 +1,4 @@
-<?php 
+<?php
 use core\logger\ConsoleLogger;
 use core\logger\ErrorEvent;
 use core\logger\FileLogger;
@@ -14,14 +14,10 @@ echo $go;
 
 // $log = new ConsoleLogger();
 // $test = "message";
-// $log->log(message:$test);
+// $log->log($tet);
 
 // $event = new ErrorEvent("Exception", $test);
 // $log->log($event);
 
 $log = new FileLogger();
-$test = "message";
-$log->log(message:$test);
-
-$event = new ErrorEvent("Exception", $test);
-$log->log($event);
+throw new Exception('Возникла ошибочка');

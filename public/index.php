@@ -20,5 +20,5 @@ echo $go;
 // $log->log($event);
 
 $log = new FileLogger();
-// throw new Exception('Возникла ошибочка', 404);
+// throw new Exception('Возникла ошибочка');
 echo $tr;

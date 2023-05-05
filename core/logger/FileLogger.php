@@ -16,14 +16,14 @@ class FileLogger implements Logger
             error_reporting(0);
         }
 
-        set_exception_handler([$this, 'exeptionHandler']);
+        set_exception_handler([$this, 'exceptionHandler']);
         set_error_handler([$this, 'errorHandler']);
         ob_start();
         register_shutdown_function([$this, 'fatalErrorHandler']);
 
     }
 
-    public function errorHandler($errstr, $errfile, $errline)
+    public function errorHandler($errno, $errstr, $errfile, $errline)
     {
         $this->log($errstr, $errfile, $errline);
     }
@@ -39,19 +39,20 @@ class FileLogger implements Logger
         }
     }
 
-    public function exeptionHandler(Throwable $e)
+    public function exceptionHandler(Throwable $e)
     {
         $this->log($e->getMessage(), $e->getFile(), $e->getLine());
     }
 
     public function log($message= '', $file='', $line = '', $tag = 'DEBUG')
     {
-        $log = "[" . date('Y-m-d H:i:s') . "] 
-        Тэг: {$tag} | 
-        Текст ошибки: {$message} | 
-        Файл: {$file} |
-        Строка: {$line} | \n=================\n";
-        file_put_contents(LOG . '/error.log', $log, FILE_APPEND);
+        file_put_contents(
+            LOG . '/error.log',
+            "[" . date('Y-m-d H:i:s') . "] 
+            Текст ошибки: {$message} | 
+            Файл: {$file} | 
+            Строка: {$line}\n=================\n",
+            FILE_APPEND);
     }
 
     public function logEvent(Event $event)

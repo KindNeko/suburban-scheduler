@@ -14,7 +14,6 @@ class FileLogger implements Logger
         set_error_handler([$this, 'errorHandler']);
         ob_start();
         register_shutdown_function([$this, 'fatalErrorHandler']);
-
     }
 
     public function errorHandler($errno, $errstr, $errfile, $errline)

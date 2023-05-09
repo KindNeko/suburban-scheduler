@@ -1,30 +1,25 @@
-[2023-05-05 15:53:36] 
+[2023-05-09 20:02:51]
+            Текст ошибки: /opt/lampp/htdocs/newFramework/public/index.php | 
+            Файл: 24 | 
+            Строка: 
+=================
+[2023-05-09 20:05:01]
+            Текст ошибки: /opt/lampp/htdocs/newFramework/public/index.php | 
+            Файл: 25 | 
+            Строка: 
+=================
+[2023-05-09 20:05:24]
+            Текст ошибки: /opt/lampp/htdocs/newFramework/public/index.php | 
+            Файл: 25 | 
+            Строка: 
+=================
+[2023-05-09 20:06:13]
             Текст ошибки: Undefined variable $tr | 
             Файл: /opt/lampp/htdocs/newFramework/public/index.php | 
-            Строка: 24
+            Строка: 25
 =================
-[2023-05-05 15:54:21] 
+[2023-05-09 20:06:55]
             Текст ошибки: Undefined variable $tr | 
             Файл: /opt/lampp/htdocs/newFramework/public/index.php | 
-            Строка: 24
-=================
-[2023-05-05 15:56:24] 
-            Текст ошибки: Undefined variable $tr | 
-            Файл: /opt/lampp/htdocs/newFramework/public/index.php | 
-            Строка: 24
-=================
-[2023-05-05 15:56:54] 
-            Текст ошибки: 2 | 
-            Файл: Undefined variable $tr | 
-            Строка: /opt/lampp/htdocs/newFramework/public/index.php
-=================
-[2023-05-05 15:57:18] 
-            Текст ошибки: Undefined variable $tr | 
-            Файл: /opt/lampp/htdocs/newFramework/public/index.php | 
-            Строка: 24
-=================
-[2023-05-05 16:00:54] 
-            Текст ошибки: Возникла ошибочка | 
-            Файл: /opt/lampp/htdocs/newFramework/public/index.php | 
-            Строка: 23
+            Строка: 25
 =================

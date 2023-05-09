@@ -8,7 +8,25 @@ use Throwable;
 
 class FileLogger implements Logger
 {
-    public function __construct( )
+    public function __construct(){}
+
+    public function log($message= '', $file='', $line = '')
+    {
+        file_put_contents(
+            LOG . '/error.log',
+            "[" . date('Y-m-d H:i:s') . "]
+            Текст ошибки: {$message} | 
+            Файл: {$file} | 
+            Строка: {$line}\n=================\n",
+            FILE_APPEND);
+    }
+
+    public function logEvent(Event $event)
+    {
+        log($event->description(), $event->name());
+    }
+
+    public function configure()
     {
         set_exception_handler([$this, 'exceptionHandler']);
         set_error_handler([$this, 'errorHandler']);
@@ -35,21 +53,5 @@ class FileLogger implements Logger
     public function exceptionHandler(Throwable $e)
     {
         $this->log($e->getMessage(), $e->getFile(), $e->getLine());
-    }
-
-    public function log($message= '', $file='', $line = '', $tag = 'DEBUG')
-    {
-        file_put_contents(
-            LOG . '/error.log',
-            "[" . date('Y-m-d H:i:s') . "] 
-            Текст ошибки: {$message} | 
-            Файл: {$file} | 
-            Строка: {$line}\n=================\n",
-            FILE_APPEND);
-    }
-
-    public function logEvent(Event $event)
-    {
-        log($event->name(), $event->description());
     }
 }

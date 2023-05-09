@@ -20,5 +20,6 @@ echo $go;
 // $log->log($event);
 
 $log = new FileLogger();
+$log->configure();
 // throw new Exception('Возникла ошибочка');
 echo $tr;
